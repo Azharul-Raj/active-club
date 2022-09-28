@@ -21,6 +21,14 @@ const Question = () => {
                 A state in React Component is its own local state, the state cannot be accessed and modified outside the component and can only be used inside the component which is very similar to, you already guessed it a function own local scope. We can define variables inside the function which can only be used inside the function block scope. Let’s demonstrate this with an example.
                 Without props, React Component will stop making sense. A React component is a reusable component which can be used over and over again in the UI, but not always we are going to render the same component with same data. Sometimes we have to change the data or content inside a component. That’s why props are introduced in React. Let’s take a look how we can use props in react
             </p>
+            <h2>When does useEffect get used other than data fetching ?</h2>
+            <p>
+                In a simple word if any side effect occers only on that time react useEffect get used.
+                A functional React component uses props and/or state to calculate the output. If the functional component makes calculations that don't target the output value, then these calculations are named side-effects.Examples of side-effects are fetch requests, manipulating DOM directly, using timer functions like setTimeout, and more.
+
+            The component rendering and side-effect logic are independent. It would be a mistake to perform side-effects directly in the body of the component, which is primarily used to compute the output.
+
+            How often the component renders isn't something you can control — if React wants to render the component, you cannot stop it.</p>
 
         </div>
     );
