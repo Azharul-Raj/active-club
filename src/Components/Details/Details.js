@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Details.css'
 import img from '../../profile.jpg'
+import Swal from 'sweetalert2'
 
 
 const Details = ({ wrkoutTime }) => {
@@ -18,6 +19,15 @@ const Details = ({ wrkoutTime }) => {
         setBreakTime(storedItem)
     },[])
     // set To localStorage ends here
+    const successMessage=() => {
+        console.log('good')
+        Swal.fire(
+            'Hey Good job!!!',
+            'You Have Completed The Your Task!',
+            'success'
+          )
+    }
+  
     return (
         <div>
             <div className="top">
@@ -51,7 +61,7 @@ const Details = ({ wrkoutTime }) => {
                 <h3>Break Time</h3>
                 <p>{ breakTime?breakTime:0} min</p>
             </div>
-            <button className='complete-btn'>Activity Complete</button>
+            <button onClick={successMessage} className='complete-btn'>Activity Complete</button>
         </div>
     );
 };
