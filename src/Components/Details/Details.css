@@ -12,6 +12,8 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.937);
+    border-radius: 8px;
 }
 .height{
     background-color: #fff;
@@ -58,6 +60,7 @@ p{
     margin: 15px 0;
 }
 .complete-btn{
+    margin-top: 30px;
     font-size: 15px;
     font-weight: 700;
     width: 100%;
