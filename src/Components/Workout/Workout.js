@@ -10,8 +10,10 @@ const Workout = ({ workout }) => {
             <div className="details">
             <h3>{ name}</h3>
             <p>{desc ? desc.slice(0, 75) + '...' : 'No Desc'}</p>
-            
-           </div>
+                <h4>For Age : { age}</h4>
+                <h4>Time Required : { time}m</h4>
+            </div>
+            <button className='add-list'>Add To List</button>
         </div>
     );
 };

@@ -21,6 +21,22 @@
 h3{
     margin: 0;
 }
+h4{
+    margin: 0;
+    font-weight: 500;
+}
 p{
     font-size: 14px;
+}
+.add-list{
+    padding: 10px;
+    background: #FC766AFF;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.add-list:hover{
+    background-color: cyan;
 }
