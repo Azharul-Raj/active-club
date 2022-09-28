@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Workout from '../Workout/Workout';
 import './Workouts.css'
 
 const Workouts = () => {
+    const [workouts, setWorkouts] = useState([])
+    useEffect(() => {
+        fetch('workouts.json')
+            .then(res => res.json())
+        .then(data=>setWorkouts(data))
+    },[])
     return (
-        <div>
-            
+        <div className='main-container'>
+            <div className="workouts-container">
+                {
+                    workouts.map(workout => <Workout key={workout.id} workout={ workout} />)
+                }
+            </div>
+            <div className="details-container">
+
+            </div>
         </div>
     );
 };
