@@ -30,7 +30,7 @@ p{
 }
 .add-list{
     padding: 10px;
-    background: #FC766AFF;
+    background: cyan;
     border: none;
     border-radius: 0px 0px 8px 8px;
     width: 100%;
@@ -38,5 +38,5 @@ p{
     bottom: 0;
 }
 .add-list:hover{
-    background-color: cyan;
+    background-color: #FC766AFF;
 }
