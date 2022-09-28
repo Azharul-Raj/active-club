@@ -1,5 +1,5 @@
 .main-container{
-    position: relative;
+    /* position: relative; */
     display: grid;
     grid-template-columns: 80% 20%;
 }
@@ -17,6 +17,43 @@
     padding: 0 30px;
 }
 
-/* @media screen {
-    
-} */
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.main-top{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+@media only screen and (min-width: 280px) and (max-width: 720px) {
+    .main-container{
+        /* position: relative; */
+        /* display: grid;
+    grid-template-columns: 50% 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    }
+    .details-container{
+        position: unset;
+        height: 100vh;
+        background-color: #FFE0B3;
+        padding: 0 30px;
+    }
+    .workouts-container{
+        /* display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 40px; */
+        /* margin: 0 20px 20px 20px; */ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+
+}

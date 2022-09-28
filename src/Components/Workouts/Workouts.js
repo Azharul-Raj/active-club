@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Details from '../Details/Details';
 import Workout from '../Workout/Workout';
 import './Workouts.css'
+import logo from '../Workouts/logo.png'
 
 const Workouts = () => {
     const [workouts, setWorkouts] = useState([])
@@ -19,7 +20,7 @@ const Workouts = () => {
     }
     return (
         <>
-            <h3>WorkOut Club</h3>
+            <h3 className='main-top'><img className='logo' src={logo} alt="" /> WorkOut Club</h3>
         <div className='main-container'>
             <div className="workouts-container">
                 {
