@@ -2,7 +2,7 @@ import React from 'react';
 import './Workout.css'
 
 
-const Workout = ({ workout }) => {
+const Workout = ({ workout,handleTime }) => {
     const{name,img,desc,age,time}=workout
     return (
         <div className='workout'>
@@ -13,7 +13,7 @@ const Workout = ({ workout }) => {
                 <h4>For Age : { age}</h4>
                 <h4>Time Required : { time}m</h4>
             </div>
-            <button className='add-list'>Add To List</button>
+            <button onClick={()=>handleTime(time)} className='add-list'>Add To List</button>
         </div>
     );
 };
